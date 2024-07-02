@@ -1,19 +1,10 @@
-let owl = $(".owl-carousel").owlCarousel({
+ $(".owl-carousel").owlCarousel({
   loop: false,
   rtl: false,
   margin: 0,
   dots: false,
   nav: false,
   center: false,
-});
-
-owl.on("mousewheel", ".owl-stage", function (e) {
-  if (e.deltaY > 0) {
-    owl.trigger("next.owl");
-  } else {
-    owl.trigger("prev.owl");
-  }
-  e.preventDefault();
 });
 
 
