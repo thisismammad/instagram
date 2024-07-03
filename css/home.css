@@ -51,6 +51,7 @@ header .head .like-direct > i {
 }
 .owl-carousel .owl-item {
   display: flex;
+  width: max-content !important;
   align-items: center;
   justify-content: center;
 }
@@ -90,7 +91,7 @@ header .head .like-direct > i {
 main .posts-container {
 }
 main .posts-container .post-item {
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 main .posts-container .post-item .post-header {
   display: flex;
@@ -125,7 +126,7 @@ main .posts-container .post-item .post-footer .like-comment-save {
   gap: 10px;
 }
 main .posts-container .post-item .post-footer .like-comment-save > i {
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 main
   .posts-container
@@ -162,17 +163,18 @@ main .posts-container .post-item .post-footer .discription > p > span {
 footer{
     bottom: 0;
     background-color: var(--bg-color);
-    width: 100%;
-    height: 50px;
+    width: 425px;
+    height: 60px;
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
+    padding-bottom: 15px;
     border-top: 1px solid #eee;
 }
 footer i{
-   font-size: 1.2em;
+   font-size: 1.5em;
 }
 footer .profile-container{
    width: 40px; 
