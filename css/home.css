@@ -10,7 +10,8 @@ header .head {
 }
 
 header .head .logo {
-  font-size: 1.2em;
+  font-family: Billabong;
+  font-size: 1.5em;
 }
 header .head .like-direct > i {
   font-size: 1.5em;
@@ -21,7 +22,7 @@ header .head .like-direct > i {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 .story {
   text-align: center;
@@ -89,10 +90,12 @@ header .head .like-direct > i {
 }
 
 main .posts-container {
+  padding-bottom: 60px;
 }
 main .posts-container .post-item {
   margin-bottom: 20px;
 }
+
 main .posts-container .post-item .post-header {
   display: flex;
   align-items: center;
@@ -146,36 +149,36 @@ main .posts-container .post-item .post-footer .discription > p {
   margin: 0;
   overflow: hidden;
 }
-main .posts-container .post-item .post-footer .discription >span {
-font-size: 0.9em;
-color: #666;
+main .posts-container .post-item .post-footer .discription > span {
+  font-size: 0.9em;
+  color: #666;
 }
-main .posts-container .post-item .post-footer .discription >.date {
-    margin-top: 2px;
-font-size: 0.8em;
-color: #666;
+main .posts-container .post-item .post-footer .discription > .date {
+  margin-top: 2px;
+  font-size: 0.8em;
+  color: #666;
 }
 
 main .posts-container .post-item .post-footer .discription > p > span {
   font-weight: bold;
 }
 
-footer{
-    bottom: 0;
-    background-color: var(--bg-color);
-    width: 425px;
-    height: 60px;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10px;
-    padding-bottom: 15px;
-    border-top: 1px solid #eee;
+footer {
+  bottom: 0;
+  background-color: var(--bg-color);
+  width: 425px;
+  height: 60px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  padding-bottom: 15px;
+  border-top: 1px solid #eee;
 }
-footer i{
-   font-size: 1.5em;
+footer i {
+  font-size: 1.5em;
 }
-footer .profile-container{
-   width: 40px; 
+footer .profile-container {
+  width: 40px;
 }
