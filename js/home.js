@@ -5,6 +5,14 @@
   dots: false,
   nav: false,
   center: false,
+  responsive:{
+    0:{
+        items:3
+    },
+    425:{
+        items:4
+    }
+}
 });
 
 
