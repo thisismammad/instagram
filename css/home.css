@@ -168,6 +168,9 @@ main .posts-container .post-item .post-footer .discription > .date {
   font-size: 0.8em;
   color: #888;
 }
+main .posts-container .post-item .post-content img {
+  border-radius: 5px;
+}
 
 main .posts-container .post-item .post-footer .discription > p > span {
   font-weight: bold;
