@@ -1,6 +1,6 @@
 :root {
   --bg-color: white;
-  --font-color: rgb(85, 85, 85);
+  --font-color: rgb(60, 60, 60);
   --input-color: #eee;
 }
 
@@ -36,5 +36,5 @@ a {
 }
 
 i {
-  font-size: 1.9em;
+  font-size: 2em;
 }
