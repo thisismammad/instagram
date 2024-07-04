@@ -15,9 +15,9 @@ body {
   font-family: sans-serif;
   max-width: 425px;
   margin: 0 auto;
+  background-color: var(--bg-color);
 }
 * {
-  background-color: var(--bg-color);
   color: var(--font-color);
   box-sizing: border-box;
   margin: 0;
@@ -40,5 +40,4 @@ a {
 i {
   font-size: 2em;
   cursor: pointer;
-  background-color: transparent;
 }

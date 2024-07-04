@@ -186,6 +186,7 @@ footer {
   left: 0;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--bg-color);
   padding: 0 15px;
   padding-bottom: 15px;
   border-top: 1px solid #eee;
