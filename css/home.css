@@ -71,6 +71,7 @@ header .head .like-direct > i {
   border-radius: 50%;
   right: 5px;
   bottom: 30px;
+  font-size: 1em;
 }
 .has > .profile-container {
   background: linear-gradient(
@@ -115,6 +116,9 @@ main
 main .posts-container .post-item .post-header .id {
   margin-right: auto;
 }
+main .posts-container .post-item .post-header i{
+ font-size: 1em;
+}
 main .posts-container .post-item .post-footer {
   padding: 5px 10px;
 }
@@ -124,9 +128,6 @@ main .posts-container .post-item .post-footer .like-comment-save {
   align-items: center;
   gap: 20px;
   padding: 0 5px;
-}
-main .posts-container .post-item .post-footer .like-comment-save > i {
-  font-size: 1.7em;
 }
 main
   .posts-container
@@ -175,9 +176,7 @@ footer {
   padding-bottom: 15px;
   border-top: 1px solid #eee;
 }
-footer i {
-  font-size: 1.7em;
-}
+
 footer .profile-container {
   width: 40px;
   height: 40px;
