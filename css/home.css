@@ -11,7 +11,8 @@ header .head {
 
 header .head .logo {
   font-family: Billabong;
-  font-size: 1.5em;
+  font-size: 3em;
+  ;
 }
 header .head .like-direct > i {
   font-size: 1.7em;
@@ -57,7 +58,7 @@ header .head .like-direct > i {
 .story > span {
   text-align: center;
   display: block;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 .story > i {
   text-align: center;
@@ -86,9 +87,7 @@ header .head .like-direct > i {
 main {
   position: relative;
 }
-main .posts-container {
-  /* padding-bottom: 60px; */
-}
+
 main .posts-container .post-item {
   margin-bottom: 20px;
 }
@@ -116,8 +115,11 @@ main
 main .posts-container .post-item .post-header .id {
   margin-right: auto;
 }
+main .posts-container .post-item .post-header .id span {
+  font-weight: bold;
+}
 main .posts-container .post-item .post-header i{
- font-size: 1em;
+ font-size: 1.5em;
 }
 main .posts-container .post-item .post-footer {
   padding: 5px 10px;
@@ -128,6 +130,7 @@ main .posts-container .post-item .post-footer .like-comment-save {
   align-items: center;
   gap: 20px;
   padding: 0 5px;
+  position: relative;
 }
 main
   .posts-container
@@ -137,11 +140,21 @@ main
   > i:last-child {
   margin-left: auto;
 }
+main
+  .posts-container
+  .post-item
+  .post-footer
+  .like-comment-save
+  > i:nth-of-type(3) {
+  transform: rotate(-35deg);
+  position: absolute;
+  left: 90px;
+  top: -2px;
+}
 main .posts-container .post-item .post-footer .line-number {
   margin-bottom: 5px;
 }
-main .posts-container .post-item .post-footer .discription {
-}
+
 main .posts-container .post-item .post-footer .discription > p {
   height: 30px;
   margin: 0;
@@ -149,12 +162,12 @@ main .posts-container .post-item .post-footer .discription > p {
 }
 main .posts-container .post-item .post-footer .discription > span {
   font-size: 0.9em;
-  color: #666;
+  color: #888;
 }
 main .posts-container .post-item .post-footer .discription > .date {
   margin-top: 2px;
   font-size: 0.8em;
-  color: #666;
+  color: #888;
 }
 
 main .posts-container .post-item .post-footer .discription > p > span {

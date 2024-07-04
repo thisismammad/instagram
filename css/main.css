@@ -1,18 +1,17 @@
 :root {
   --bg-color: white;
-  --font-color: rgb(68, 68, 68);
-  --input-color:#eee
+  --font-color: rgb(85, 85, 85);
+  --input-color: #eee;
 }
 
 html,
 body {
   width: 100%;
   height: 100%;
-
 }
-body{
+body {
   background-color: var(--bg-color);
-  font-size: 14px;
+  font-size: 12px;
   font-family: sans-serif;
   max-width: 425px;
   margin: 0 auto;
@@ -21,13 +20,13 @@ body{
   color: var(--font-color);
   box-sizing: border-box;
   margin: 0;
-padding: 0;
+  padding: 0;
 }
 
-img{
+img {
   width: 100%;
 }
-a{
+a {
   text-decoration: none;
 }
 
@@ -37,5 +36,5 @@ a{
 }
 
 i {
-  font-size: 1.7em;
+  font-size: 1.9em;
 }
