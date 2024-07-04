@@ -2,6 +2,7 @@
   --bg-color: white;
   --font-color: rgb(60, 60, 60);
   --input-color: #eee;
+  user-select: none;
 }
 
 html,
@@ -37,4 +38,5 @@ a {
 
 i {
   font-size: 2em;
+  cursor: pointer;
 }
