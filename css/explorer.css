@@ -13,6 +13,38 @@
   border: 5px solid var(--bg-color);
 }
 
+.search-container{
+  margin: 10px 15px;
+  padding: 8px 20px;
+  background-color: var(--input-color);
+  border-radius: 10px;
+}
+.search-container input{
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.search-container i{
+ color: #555;
+}
+
+.posts-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2px;
+}
+.item{
+
+}
+.item img{
+ height: 100%;
+}
+
+.big{
+  grid-column: auto/span 1;
+  grid-row: auto/span 2;
+}
+
 footer {
     bottom: 0;
     background-color: var(--bg-color);

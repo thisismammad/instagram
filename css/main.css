@@ -1,6 +1,7 @@
 :root {
   --bg-color: white;
-  --font-color: black;
+  --font-color: rgb(43, 43, 43);
+  --input-color:#eee
 }
 
 html,
