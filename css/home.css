@@ -122,7 +122,7 @@ main .posts-container .post-item .post-footer .like-comment-save {
   margin-bottom: 5px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   padding: 0 5px;
 }
 main .posts-container .post-item .post-footer .like-comment-save > i {
