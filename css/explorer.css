@@ -61,6 +61,9 @@ footer {
   background-color: var(--bg-color);
 }
 footer .profile-container {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
+}
+footer .profile-container img{
+  border: 0.1rem solid white;
 }

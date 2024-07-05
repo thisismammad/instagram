@@ -42,17 +42,26 @@ header .head .like-direct > i {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--input-color);
 }
 .profile-container > img {
   border-radius: 50%;
   text-align: center;
   width: 96%;
-  border: 5px solid var(--bg-color);
+  outline: 5px solid var(--bg-color);
 }
 
 .owl-carousel .owl-item img {
   display: block;
-  width: 92%;
+  width: 84%;
+}
+
+.your-profile .profile-container{
+  background-color: transparent;
+}
+.your-profile .profile-container>img{
+  border: 1px solid white;
+  outline: 4px solid var(--bg-color);
 }
 .story > span {
   text-align: center;
@@ -95,12 +104,13 @@ main .posts-container .post-item .post-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 15px 0 10px;
+  padding: 0 15px 0 3px;
 }
 
 main .posts-container .post-item .post-header .profile > .profile-container {
   width: 40px;
   height: auto;
+  margin: 8px;
 }
 main
   .posts-container
@@ -193,6 +203,9 @@ footer {
 }
 
 footer .profile-container {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
+}
+footer .profile-container img{
+  border: 0.1rem solid white;
 }
