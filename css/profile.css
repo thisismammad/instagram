@@ -38,10 +38,10 @@ header .settings i {
 }
 .profile-follow {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
   padding: 0 15px;
   margin-bottom: 50px;
+  /* gap: 15%; */
 }
 
 .profile {
@@ -75,17 +75,18 @@ header .settings i {
 }
 
 .follow {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin-top: 40px;
+  gap: 20px;
 }
 .follow .item {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-right: 30px;
 }
 .follow .item span:first-child {
   font-weight: bolder;
