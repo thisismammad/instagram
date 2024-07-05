@@ -17,6 +17,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2px;
+  padding-bottom: 63px;
+  padding-top: 2px;
 }
 
 .item img {
@@ -64,7 +66,7 @@ header .settings i {
   width: 25px;
   height: 25px;
   line-height: 20px;
-  border: 3px solid white;
+  border: 3px solid var(--bg-color);
   background-color: rgb(22, 92, 243);
   border-radius: 50%;
   right: 10px;
@@ -120,7 +122,7 @@ header .settings i {
   display: flex;
   justify-content: space-between;
   padding: 0 35px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--input-color);
 }
 .post-menu i {
   border-bottom: 2px solid var(--font-color);
@@ -208,7 +210,7 @@ aside .sec .item i {
 aside .sec .item div > span {
   display: block;
 }
-aside .sec .item div > span:last-child{
+aside .sec .item div > span:last-child {
   font-size: 0.9em;
   color: #888;
   margin-bottom: 10px;
@@ -230,4 +232,3 @@ aside > .sec:last-child > span:not(:first-child) {
 footer .profile-container img {
   border: 2px solid white;
 }
-

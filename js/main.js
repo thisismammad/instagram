@@ -23,3 +23,4 @@ function setDark() {
     $(".fa-moon").fadeIn(200);
     $(".fa-sun-bright").fadeOut(200);
   }
+

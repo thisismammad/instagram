@@ -33,6 +33,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2px;
+  padding-bottom: 63px;
 }
 
 .item img {
@@ -44,4 +45,3 @@
   grid-column: auto/span 1;
   grid-row: auto/span 2;
 }
-

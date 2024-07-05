@@ -12,7 +12,6 @@ header .head {
 header .head .logo {
   font-family: Billabong;
   font-size: 3em;
-  ;
 }
 header .head .like-direct > i {
   margin-left: 20px;
@@ -23,6 +22,7 @@ header .head .like-direct > i {
   align-items: center;
   justify-content: space-evenly;
   margin-bottom: 10px;
+  overflow: auto;
 }
 .story {
   text-align: center;
@@ -47,19 +47,14 @@ header .head .like-direct > i {
 .profile-container > img {
   border-radius: 50%;
   text-align: center;
-  width: 96%;
+  width: 84%;
   outline: 5px solid var(--bg-color);
 }
 
-.owl-carousel .owl-item img {
-  display: block;
-  width: 84%;
-}
-
-.your-profile .profile-container{
+.your-profile .profile-container {
   background-color: transparent;
 }
-.your-profile .profile-container>img{
+.your-profile .profile-container > img {
   border: 1px solid white;
   outline: 4px solid var(--bg-color);
 }
@@ -99,6 +94,9 @@ main {
 main .posts-container .post-item {
   margin-bottom: 20px;
 }
+main .posts-container {
+  padding-bottom: 63px;
+}
 
 main .posts-container .post-item .post-header {
   display: flex;
@@ -127,8 +125,8 @@ main .posts-container .post-item .post-header .id {
 main .posts-container .post-item .post-header .id span {
   font-weight: bold;
 }
-main .posts-container .post-item .post-header i{
- font-size: 1.5em;
+main .posts-container .post-item .post-header i {
+  font-size: 1.5em;
 }
 main .posts-container .post-item .post-footer {
   padding: 5px 10px;
@@ -185,4 +183,3 @@ main .posts-container .post-item .post-content img {
 main .posts-container .post-item .post-footer .discription > p > span {
   font-weight: bold;
 }
-
