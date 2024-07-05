@@ -45,12 +45,13 @@ i {
 
 footer {
   height: 60px;
-  width: 100%;
+  width:inherit;
+  max-width: 426px;
   position: fixed;
   display: flex;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translate(-50%);
   align-items: center;
   justify-content: space-between;
   padding: 0 15px;
