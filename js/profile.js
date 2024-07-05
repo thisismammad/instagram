@@ -9,7 +9,7 @@ $(".fa-bars").on("click", function () {
   $("body").css("overflow", "hidden");
 });
 
-let isDark = document.cookie.split(" ")[0];
+let isDark = localStorage.getItem("isDark");
 
 if (isDark === "true") {
   setDark();
@@ -23,26 +23,15 @@ if (isDark === "true") {
 
 $(".dark-light").on("click", function () {
   if (isDark === "true") {
-    console.log("if");
     setLight();
     $(".fa-moon").fadeIn(200);
     $(".fa-sun-bright").fadeOut(200);
     isDark = "false";
   } else {
     setDark();
-    console.log("el");
     $(".fa-sun-bright").fadeIn(200);
     $(".fa-moon").fadeOut(200);
     isDark = "true";
   }
-  deleteAllCookies();
-  document.cookie = isDark + " expires=Wed, 1 Jan 2070 13:47:11 UTC; path=/";
+  localStorage.setItem("isDark", isDark);
 });
-
-function deleteAllCookies() {
-  document.cookie.split(";").forEach((cookie) => {
-    const eqPos = cookie.indexOf("=");
-    const name = eqPos > -1 ? cookie.substring(0, eqPos) : cookie;
-    document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
-  });
-}
