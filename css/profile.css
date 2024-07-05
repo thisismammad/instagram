@@ -1,48 +1,48 @@
 .profile-container {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .profile-container > img {
-    border-radius: 50%;
-    text-align: center;
-    width: 96%;
-    border: 5px solid var(--bg-color);
-  }
-
-  .posts-container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 2px;
-  }
- 
-  .item img{
-   height: 100%;
-   border-radius: 5px;
-  }
-
-  header .settings{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 15px ;
-    margin-top: 10px;
-  }
-header  .settings i{
- cursor: pointer;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.profile-follow{
-display: flex;
-justify-content: space-between;
-align-items: flex-start;
-padding: 0 15px;
-margin-bottom: 50px;
+.profile-container > img {
+  border-radius: 50%;
+  text-align: center;
+  width: 96%;
+  border: 5px solid var(--bg-color);
 }
 
-.profile{
+.posts-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.item img {
+  height: 100%;
+  border-radius: 5px;
+}
+
+header .settings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  margin-top: 10px;
+}
+header .settings i {
+  cursor: pointer;
+}
+.profile-follow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 15px;
+  margin-bottom: 50px;
+}
+
+.profile {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -72,30 +72,30 @@ margin-bottom: 50px;
   font-size: 1em;
 }
 
-.follow{
+.follow {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin-top: 40px;
 }
-.follow .item{
+.follow .item {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-right: 30px;
 }
-.follow .item span:first-child{
+.follow .item span:first-child {
   font-weight: bolder;
 }
 
-.buttons{
+.buttons {
   display: flex;
   gap: 5px;
   padding: 0 15px;
   margin-bottom: 30px;
 }
-.buttons button{
+.buttons button {
   background-color: var(--input-color);
   border: none;
   outline: none;
@@ -103,52 +103,131 @@ margin-bottom: 50px;
   padding: 8px 0;
   cursor: pointer;
 }
-.buttons button:nth-of-type(1){
+.buttons button:nth-of-type(1) {
   flex: 3;
 }
-.buttons button:nth-of-type(2){
+.buttons button:nth-of-type(2) {
   flex: 3;
 }
-.buttons button:nth-of-type(3){
- padding: 8px;
+.buttons button:nth-of-type(3) {
+  padding: 8px;
 }
-.buttons button:nth-of-type(3) i{
-font-size: 1em;
+.buttons button:nth-of-type(3) i {
+  font-size: 1em;
 }
 
-.post-menu{
+.post-menu {
   display: flex;
   justify-content: space-between;
   padding: 0 35px;
   border-bottom: 1px solid #ddd;
 }
-.post-menu i{
- border-bottom: 2px solid var(--font-color);
- padding: 10px 20px;
+.post-menu i {
+  border-bottom: 2px solid var(--font-color);
+  padding: 10px 20px;
 }
 
-footer {
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    position: sticky;
-    display: flex;
-    bottom: 0;
-    left: 0;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 15px;
-    padding-bottom: 15px;
-    border-top: 1px solid #eee;
+aside {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -120%;
+  width: 100%;
+  height: 100%;
   background-color: var(--bg-color);
-  }
- 
-  footer .profile-container {
-    width: 40px;
-    height: 40px;
-    
-  }
-  footer .profile-container img {
-    border: 2px solid white;
-    
-  }
+  z-index: 2;
+  transition: right 0.5s;
+  overflow: auto;
+}
+aside .head {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  position: fixed;
+  background-color: var(--bg-color);
+  top: 0;
+  right: -120%;
+  width: 100%;
+  transition: right 0.5s;
+}
+
+aside .head > span {
+  margin-right: auto;
+  font-size: 1.3em;
+}
+aside .head .dark-light {
+  position: relative;
+}
+aside .head .dark-light > i {
+  position: absolute;
+  top: -12px;
+  right: 0;
+}
+
+aside .search-container {
+  margin: 10px 15px;
+  margin-top: 50px;
+  padding: 10px 20px;
+  background-color: var(--input-color);
+  border-radius: 10px;
+}
+aside .search-container input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+aside .search-container i {
+  color: #555;
+  font-size: 1em;
+}
+
+aside .sec {
+  border-top: 7px solid var(--input-color);
+}
+aside .sec > span {
+  display: block;
+  margin: 10px 15px;
+}
+
+aside .sec .item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 15px;
+  gap: 10px;
+}
+aside .sec .item i {
+  text-align: center;
+  font-size: 1.8em;
+  width: 30px;
+}
+
+aside .sec .item div > span {
+  display: block;
+}
+aside .sec .item div > span:last-child{
+  font-size: 0.9em;
+  color: #888;
+  margin-bottom: 10px;
+}
+aside .sec .item > span {
+  text-align: left;
+}
+
+aside .sec .item i:last-child {
+  font-size: 1.2em;
+  text-align: right;
+  margin-left: auto;
+}
+
+aside > .sec:last-child > span:not(:first-child) {
+  color: #e74c3c;
+}
+
+footer .profile-container img {
+  border: 2px solid white;
+}
+

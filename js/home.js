@@ -15,13 +15,6 @@ $(".owl-carousel").owlCarousel({
   },
 });
 
-// const readMore = document.querySelectorAll(".read-more");
-
-// readMore.addEventListener("click", ()=>{
-//   const p = document.querySelector("main .posts-container .post-item .post-footer .discription > p");
-//   p.style.height = "auto";
-//   readMore.style.display = "none"
-// })
 
 $(".read-more").on("click", function () {
   $(this).parent().find("p").css("height", "auto");
