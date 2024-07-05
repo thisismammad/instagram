@@ -73,8 +73,8 @@ header .head .like-direct > i {
   border: 3px solid var(--bg-color);
   background-color: rgb(22, 92, 243);
   border-radius: 50%;
-  right: 5px;
-  bottom: 30px;
+  right: 10px;
+  bottom: 33px;
   font-size: 1em;
 }
 .has > .profile-container {
